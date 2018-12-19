@@ -8,11 +8,13 @@ public class Item : MonoBehaviour {
     {
         if (isEnter)
         {
-            Debug.Log("Enter");
+            AutoMove.isStopped = true;
+            //Debug.Log("Enter");
         }
         else
         {
-            Debug.Log("Exit");
+            AutoMove.isStopped = false;
+            //Debug.Log("Exit");
         }
     }
 }
