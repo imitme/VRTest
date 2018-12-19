@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class AIMCast : MonoBehaviour {
     public float dist = 10.0f;
     public AIM aim;
+    public AIMCircle aimCircle;
 
     private Transform tr;
     private Ray ray;
@@ -24,11 +25,13 @@ public class AIMCast : MonoBehaviour {
         {
             AutoMove.isStopped = true;
             aim.isGaze = true;
+            aimCircle.isGaze = true;
         }
         else
         {
             AutoMove.isStopped = false;
             aim.isGaze = false;
+            aimCircle.isGaze = false;
         }
 		
 	}
