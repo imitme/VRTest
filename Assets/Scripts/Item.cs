@@ -14,13 +14,11 @@ public class Item : MonoBehaviour {
         if (isEnter)
         {
             canvasObj.SetActive(true);
-            //AutoMove.isStopped = true;    //Aim 에서 처리중이다
-            //Debug.Log("Enter");
         }
-        else
-        {
-            //AutoMove.isStopped = false;   //Aim 에서 처리중이다
-            //Debug.Log("Exit");
-        }
+    }
+
+    public void OnClickItemButton()
+    {
+        Debug.Log("###  Click  ###");
     }
 }
